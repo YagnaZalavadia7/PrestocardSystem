@@ -1,0 +1,121 @@
+<!--MADE BY Yagna Zalavadia-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>PCS-Schedule</title>
+ <!-- CSS FOR THIS PAGE -->
+ <link rel="stylesheet" href="css/schedule.css">
+ <!-- COMMON CSS  -->
+ <link rel="stylesheet" href="css/style.css">
+  <!-- CSS FILE FOR ACCORDION -->
+  <link href="css/jquery-ui.css" rel="stylesheet">
+
+  <!-- EXTERNAL LINKS FOR JQUERY-->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- JS FILE FOR SCHEDULE FORM -->
+  <script type="text/javascript" src="js/schedule.js"></script>
+
+  <!-- LINK FOR FONT STYLE -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
+  wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<!-- HEADER AREA -->
+<header>
+  <h4>PRESTO CARD SYSTEM</h4>
+  <nav>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="passInfo.html">INFORMATION</a></li>
+      <li><a href="schedule.html">SCHEDULE</a></li>
+      <li><a href="booking.html">BOOKING</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+    </ul>
+  </nav>
+</header><!-- HEADER AREA END -->
+
+
+
+
+<body>
+  <div id="maincontent">
+    <h2 class="demoHeaders">Select service :-</h2>
+    <!-- FORM FOR SELECTING SERVICE -->
+    <form class="schedule-form">
+      <div class="form-container">
+        <div class="main-input-container">
+          <div class="form-input">
+            <label>Select Train Service *</label>
+            <select id="service_selection" onchange="onServiceChange()">
+              <option value="" disabled selected>--select--</option>
+              <option value="Go Transit">Go Transit</option>
+              <option value="Blue Subway">Blue Subway</option>
+              <option value="Sky Train">Sky Train</option>
+            </select>
+          </div>
+          <div class="form-error" id="service_error">Please select a service</div>
+        </div>
+        <div class="main-input-container">
+          <div class="form-input">
+            <label>Available City</label>
+            <input id="city_selection" disabled value="" />
+          </div>
+        </div>
+        <input type="button" id="submit_button" value="Get Schedule" class="form-submit-button">
+      </div>
+    </form>
+
+    <div class="schedule-table" id="show_schedule_table">
+      <table>
+        <tr>
+          <th>Sr.No</th>
+          <th>Route</th>
+          <th>Pickup Point</th>
+          <th>Time</th>
+        </tr>
+        <tbody id="data_rows">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+<!--  FOOTER AREA  -->
+<footer>
+  <section id="footerarea">
+    <section id="address">
+      <p>Address:<br> 65 Front Street West Toronto, Ontario M5J 1E6, Canada</p>
+      <p>Contact: 888-555-5555</p>
+    </section>
+    <section id="navlinked">
+      <a id="linkedpages" href="index.html">HOME</a>
+      <a id="linkedpages" href="passInfo.html">INFORMATION</a>
+      <a id="linkedpages" href="schedule.html">SCHEDULE</a>
+      <a id="linkedpages" href="booking.html">BOOKING</a>
+        <a id="linkedpages" href="about.html">ABOUT</a>
+    </section>
+    <section id="socialshare">
+      <a href="https://www.facebook.com/"><img src="images/facebook1.png" align="right"></a>
+      <a href="https://twitter.com/?lang=en"><img src="images/twitter1.png" align="right"></a>
+      <a href="https://www.instagram.com/"><img src="images/instagram1.png" align="right"></a>
+    </section>
+  </section>
+  <p id="copyright">Copyright &copy; 2021 Presto Card System. All Rights Reserved.</p>
+
+</footer>
+<!-- FOOTER AREA END -->
+
+</html>

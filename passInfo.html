@@ -1,0 +1,117 @@
+<!--MADE BY Hena Shah -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PCS - Information</title>
+  <!-- CSS FOR THIS PAGE -->
+  <link rel="stylesheet" href="css/passinfo.css">
+  <!-- COMMON CSS  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- JS FILE -->
+  <script src="js/passinfo.js"></script>
+  <!-- LINK FOR FONT STYLE -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER AREA -->
+  <header>
+    <h4>PRESTO CARD SYSTEM</h4>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="passInfo.html">INFORMATION</a></li>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="booking.html">BOOKING</a></li>
+        <li><a href="about.html">ABOUT </a></li>
+      </ul>
+    </nav>
+  </header><!-- HEADER AREA END -->
+
+  <main id="info">
+    <!-- NAV FOR TRAIN SERVICE OPTIONS -->
+    <div id="serviceProvider">
+      <ul>
+        <li><a class="service-tabs active-tab" title="Go Transit"
+            onclick="setNewTab(event,'Go Transit')">Go Transit</a>
+        </li>
+        <li><a  class="service-tabs" title="BlueWay" onclick="setNewTab(event,'BlueWay')">BlueWay</a>
+        </li>
+        <li><a class="service-tabs" title="Vancouver Sky Train" onclick="setNewTab(event,'Vancouver Sky Train')">Vancouver Sky Train</a></li>
+      </ul>
+    </div><!-- END NAV -->
+   
+
+    <div id="Go Transit" class="service">
+      <h1>Go Transit Train Service</h1>
+      <p class="service-para"><ul><li>GO Transit is a regional public transit system serving the Greater Golden
+         Horseshoe region of Ontario, Canada. With its hub at Union Station in Toronto, GO Transit's distinctive green 
+         and white commuter rail trains serve a population of more than seven million across an area over 11,000 square
+      kilometres (4,200 sq mi) stretching from Brantford and Kitchener in the west to Newcastle and Peterborough in 
+          the east, and from Barrie in the north to Niagara Falls in the south. The GO system map shows seven train lines (or corridors), all departing from Toronto's Union Station and
+           mostly named respectively after the outer terminus of train service. Although colours are assigned in a 
+           consistent fashion to each line in all official media, in colloquial parlance lines are only ever referred to 
+           by their names.</li> </ul> </p>
+      <img src="images/train1.jpg" class="tabs-image">
+    </div>
+
+    <div id="BlueWay" style="display: none;" class="service">
+      <h1>BlueWay Train Service</h1>
+        <p class="service-para"><ul>
+          <li>Hudson Bay Railway (reporting mark HBRY) is a Canadian short line railway
+           operating over 1,300 kilometres (810 mi) of track in northeastern Saskatchewan and northern Manitoba. 
+           Blue Way is made up of 627 miles of former Canadian National (CN) trackage, with a network that connects 
+           with CN in The Pas, running north through Manitoba to the Hudson Bay at the Port of Churchill.</li></ul>  </p>
+      <img src="images/train2.jpg" class="tabs-image">
+    </div>
+
+    <div id="Vancouver Sky Train" style="display: none;" class="service">
+      <h1>Vancouver Sky Train Service</h1>
+        <p class="service-para"><ul><li>SkyTrain is a medium-capacity rapid transit system in the Metro Vancouver 
+          Regional District, serving Vancouver, British Columbia, Canada, and surrounding municipalities. SkyTrain has 
+          79.6 km (49.5 mi) of track and uses fully automated trains on grade-separated tracks running on underground 
+          and elevated guideways, allowing SkyTrain to hold consistently high on-time reliability. The name "SkyTrain" 
+          was coined for the system during Expo 86 because the first line (Expo) principally runs on elevated guideway 
+          outside of Downtown Vancouver, providing panoramic views of the metropolitan area. SkyTrain uses the world's 
+          second-longest cable-supported transit-only bridge, known as SkyBridge, to cross the Fraser River.</li></ul> </p>
+      <img src="images/train3.jpg" class="tabs-image">
+    </div>
+
+  </main>
+
+  <!--  FOOTER AREA  -->
+  <footer>
+    <section id="footerarea">
+      <section id="address">
+        <p>Address:<br> 65 Front Street West Toronto, Ontario M5J 1E6, Canadas</p>
+        <p>Contact: 888-555-5555</p>
+      </section>
+      <section id="navlinked">
+        <a id="linkedpages" href="index.html">HOME</a>
+        <a id="linkedpages" href="passInfo.html">INFORMATION</a>
+        <a id="linkedpages" href="schedule.html">SCHEDULE</a>
+        <a id="linkedpages" href="booking.html">BOOKING</a>
+        <a id="linkedpages" href="about.html">ABOUT</a>
+      </section>
+      <section id="socialshare">
+        <a href="https://www.facebook.com/"><img src="images/facebook1.png" align="right"></a>
+        <a href="https://twitter.com/?lang=en"><img src="images/twitter1.png" align="right"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram1.png" align="right"></a>
+      </section>
+    </section>
+    <p id="copyright">Copyright &copy; 2021 Presto Card System. All Rights Reserved.</p>
+
+  </footer><!-- FOOTER AREA END -->
+</body>
+
+</html>

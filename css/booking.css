@@ -1,0 +1,151 @@
+/*MADE BY Yagna Zalavadia*/
+
+
+body{
+    color: #1A3E4C;
+}
+header img { 
+    padding: 10px;
+}
+
+nav {
+    float: right;
+    margin-right: 8%;
+    margin-top: 1%;
+    justify-content: space-around;
+    font-size: 2em;
+}
+h2{
+    color: #1A3E4C;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#registrationForm{
+    width: 90%;
+    margin: auto;
+    border: 2px solid #402a72;
+    border-radius: 7px;
+    margin-top: 30px;
+}
+
+#paymentForm {
+    
+    width: 90%;
+    margin: auto;
+    border: 2px solid #402a72;
+    border-radius: 7px;
+    
+    margin-top: 30px;
+}
+hr{
+    border: 2px solid #888888;
+}
+
+label {
+    width: 25%;
+    margin: 5px 0px;
+    font-size: 18px;
+}
+
+
+label+* {
+    
+    margin: 10px 0px;
+    border: 2px solid #e4dfdc;
+    border-radius: 3px;
+ 
+}
+
+#formdetails{
+    width: 90%;
+    margin: auto;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 8px;
+    margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 10px 15px;
+   margin-top: 8px;
+    margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 8px;
+    margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.red{
+    color: red;
+}
+
+#submit_button {
+  font-weight: bolder;
+    width: 100%;
+    background-color: #101820FF;
+    color: black;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #F2AA4CFF;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.razorpay-payment-button {
+    font-weight: bolder;
+    width: 100%;
+    background-color: #101820FF;
+        color: #F2AA4CFF;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#p_name_error ,
+#p_age_error , 
+#g_name_error , 
+#g_number_error,
+#g_email_error{
+    color: firebrick;
+    font-weight: bolder;
+}
+
+
+
+
+

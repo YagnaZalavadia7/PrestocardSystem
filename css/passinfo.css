@@ -1,0 +1,114 @@
+/*MADE BY Hena Shah*/
+#info{
+    display: block;
+    width: 100%;
+    margin: 2px auto;
+    text-align: center;
+}
+#info nav{
+    text-align: center; 
+    font-size: 20px;
+    float: none;
+}
+#info h1{
+ text-align: center;   
+}
+#info img{
+    display: block;
+    margin: 2px auto;
+    width: 90%;
+    height: auto;
+    max-height: 500px;
+}
+
+h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+h3{
+    color: #1A3E4C;
+    background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service{
+    border: 1px solid black;
+    margin: 0px 10%;
+    padding-bottom: 10px;
+}
+
+.service h1{
+    text-decoration: underline;
+}
+li{
+    text-align: left;
+    line-height: 23px;
+}
+
+/* tabs css */
+#serviceProvider ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    padding-left: 0;
+    text-align: justify;
+}
+
+
+/* screens with less then 480px will show tabs in column  */
+@media screen and (max-width: 480px) {
+    #serviceProvider ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+}
+
+#serviceProvider li{
+    width: 100%;
+    text-align: center;
+}
+
+/* tabs common UI */
+.service-tabs{
+    color: #F2AA4CFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px 12px;
+    text-align: justify;
+}
+
+/* on tabs hover */
+.service-tabs:hover
+{
+    color: #000000;
+}
+
+/* selcted tab */
+.active-tab {
+    background-color: #092E49;
+}
+
+/* selected tab's hover  */
+.active-tab:hover {
+    color: #F2AA4CFF;
+    background-color: white;
+}
+
+/* description of tabs */
+.service-para{
+    color: black;
+    text-align: left;
+    
+}
+
+ul{
+    text-align: center;
+}

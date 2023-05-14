@@ -1,0 +1,165 @@
+<!--MADE BY YAGNA ZALAVADIA-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PCS FORM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS FILE FOR FORM -->
+  <link rel="stylesheet" type="text/css" href="css/booking.css">
+  <!-- COMMON CSS FILE  -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- JS FILE FOR FORM -->
+  <script type="text/javascript" src="js/form.js"></script>
+  <!-- LINK FOR FONT STYLE -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER AREA -->
+  <header>
+    <h4>PRESTO CARD SYSTEM</h4>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="passInfo.html">INFORMATION</a></li>
+        <li><a href="schedule.html">SCHEDULE</a></li>
+        <li><a href="booking.html">BOOKING</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header><!-- HEADER AREA END -->
+
+  <main>
+
+    <!-- PERSONAL DETAILS FORM -->
+
+    <div id="registrationForm">
+      <h2>Personal Details</h2>
+      <div id="formdetails">
+        <label>First name<span class="red">*</span> : <span id="p_name_error"></span></label>
+        <input type="text" placeholder="Enter first name" id="p_name">
+
+        <label>Last name<span class="red">*</span> : <span id="g_name_error"></span></label>
+        <input type="text" placeholder="Enter last name" id="g_name">
+
+        <label>Age<span class="red">*</span> : <span id="p_age_error"></span></label>
+        <input type="text" placeholder="Enter your age" id="p_age">
+
+        <label>Gender<span class="red">*</span>:</label>
+        <div style="display: flex;flex-direction: column;border: none;">
+          <div><input type="radio" id="p_gender" name="gender" value="Male" checked>
+            Male</div>
+          <div><input type="radio" id="p_gender" name="gender" value="Female">
+            Female</div>
+          <div><input type="radio" id="p_gender" name="gender" value="Transgender">
+            Transgender</div>
+        </div>
+
+        <label>Phone no<span class="red">*</span> : <span id="g_number_error"></span></label>
+        <input type="text" placeholder="Enter your 10 digit contact number" id="g_number">
+
+        <label>Email<span class="red">*</span> : <span id="g_email_error"></span></label>
+        <input type="email" placeholder="Enter your email id" id="email"><br><br>
+        <hr>
+      </div>
+
+      <!-- card INFORMATION FORM -->
+      <h2>Card Information</h2>
+      <div id="formdetails">
+        <label>Application Type<span class="red">*</span> :</label>
+        <input type="text" placeholder="NEW CARD" id="p_name" disabled>
+
+        <label>Entry Date<span class="red">*</span> : <span id="entry_date_error"></span></label>
+        <input type="date" name="date" id="date">
+
+        <label>Card Type<span class="red">*</span> : <span id="pass_type_error"></span></label>
+        <select id="cardType" name="cardType" id="cardtype">
+          <option value="annualy">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="quarterly">Quarterly</option>
+        </select>
+
+        <label>Card Name<span class="red">*</span> : <span id="passenger_type_error"></span></label>
+        <select id="passengerType" name="passengerType" id="passengertype">
+          <option value="passenger">Passenger Card</option>
+          <option value="family">Family Card</option>
+          <option value="student">Student Card</option>
+        </select>
+
+        <label>Select Service<span class="red">*</span> : <span id="service_type_error"></span></label>
+        <select id="classService" name="classService" id="servicetype">
+          <option value="Go Transit">Go Transit</option>
+          <option value="Blue Subway">Blue Subway</option>
+          <option value="Sky Train">Vancouver</option>
+        </select><br><br>
+
+        <input type="button" id="submit_button" value="Submit">
+      </div>
+    </div>
+
+    <!-- PAYMENT FORM-->
+    <div id="paymentForm">
+      <h2>Payment Information</h2>
+      <div id="formdetails">
+        ID Card Amount : $
+        <input type="text" placeholder="20/-" id="idcard" disabled>
+
+        Train Card Amount : $
+        <input type="text" placeholder="100/-" id="metroCardFees" disabled>
+
+
+        Toll Fees : $
+        <input type="text" placeholder="5/-" id="tollfees" disabled>
+
+        Total : $
+        <input type="text" placeholder="125/-" id="totalfees" disabled>
+
+        <!--  HTML CODE TO LINK 3RD PARTY API -->
+        <form action="https://www.example.com/payment/success/" method="POST">
+          <script src="https://checkout.razorpay.com/v1/checkout.js" data-key="rzp_test_Q0KmSFu0sAiyL4" // Enter the
+            Test API Key ID generated from Dashboard → Settings → API Keys data-amount="12500" // Amount is in currency
+            subunits. Hence, 500000 refers to 500000 paise or ₹500.00. data-currency="CAD" //You can accept
+            international payments by changing the currency code. Contact our Support Team to enable International for
+            your account data-buttontext="Make Payment" data-name="PCS" data-description="Presto Card System"
+            data-image="https://png.pngtree.com/png-clipart/20200225/original/pngtree-vector-illustration-of-white-metro-train-png-image_5296458.jpg"
+            data-prefill.name="Yagna Zalavadiya" data-prefill.email="yagna.zalavadiya@gmail.com"
+            data-theme.color="#0b3a5b"></script>
+          <input type="hidden" custom="Hidden Element" name="hidden">
+
+        </form>
+      </div>
+    </div>
+  </main>
+  <!--  FOOTER AREA  -->
+  <footer>
+    <section id="footerarea">
+      <section id="address">
+        <p>Address:<br> 65 Front Street West Toronto, Ontario M5J 1E6, Canada</p>
+        <p>Contact: 888-555-5555</p>
+      </section>
+      <section id="navlinked">
+        <a id="linkedpages" href="index.html">HOME</a>
+        <a id="linkedpages" href="passInfo.html">INFORMATION</a>
+        <a id="linkedpages" href="schedule.html">SCHEDULE</a>
+        <a id="linkedpages" href="booking.html">BOOKING</a>
+          <a id="linkedpages" href="about.html">ABOUT</a>
+      </section>
+      <section id="socialshare">
+        <a href="https://www.facebook.com/"><img src="images/facebook1.png" align="right"></a>
+        <a href="https://twitter.com/?lang=en"><img src="images/twitter1.png" align="right"></a>
+        <a href="https://www.instagram.com/"><img src="images/instagram1.png" align="right"></a>
+      </section>
+    </section>
+    <p id="copyright">Copyright &copy; 2021 Presto Card System. All Rights Reserved.</p>
+
+  </footer><!-- FOOTER AREA END -->
+</body>
+
+</html>
